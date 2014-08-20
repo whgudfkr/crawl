@@ -26,8 +26,8 @@ public class Crawl {
 			Scanner sc = new Scanner(System.in);
 			String search = sc.next();
 			String starturl = "http://news.naver.com/main/search/search.nhn?query="+URLEncoder.encode(search, "EUC-KR")+"&st=news.all&q_enc=EUC-KR&r_enc=UTF-8&r_format=xml&rp=none&sm=all.basic&ic=all&so=rel.dsc&detail=0&pd=1&start=1&display=20&page=";
-			if(!(new File("/home/whgudfkr/WebCrawler/java/data/"+search+".txt").isFile())){
-				String path ="/home/whgudfkr/WebCrawler/java/data/"+search+".txt";
+			if(!(new File("./"+search+".txt").isFile())){
+				String path ="./"+search+".txt";
 				BufferedWriter writer = new BufferedWriter(new FileWriter(path));
 				StringBuilder sb = new StringBuilder();
 				for (int i = 1; i <= Pages; i++) {
