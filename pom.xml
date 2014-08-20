@@ -88,7 +88,7 @@
 
 					<archive>
 						<manifest>
-							<mainClass>crawl.Crawl</mainClass>
+							<mainClass>Crawl</mainClass>
 
 							<addClasspath>true</addClasspath>
 
